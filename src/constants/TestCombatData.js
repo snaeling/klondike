@@ -160,10 +160,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "0"
     },
-    "Wyatt Earp": {
+    "First Last": {
       n: "\n",
       t: "\t",
-      name: "Wyatt Earp",
+      name: "YOU",
       duration: "06:42",
       DURATION: "402",
       damage: "8482600",
@@ -196,9 +196,9 @@ let TestCombatData = {
       swings: "495",
       tohit: "100.00",
       TOHIT: "100",
-      maxhit: "Drill-86524",
+      maxhit: "Phantom Rush-86524",
       MAXHIT: "86524",
-      "maxhit-*": "Drill-86.52K",
+      "maxhit-*": "Phantom Rush-86.52K",
       "MAXHIT-*": "86K",
       healed: "24278",
       "healed%": "0%",
@@ -235,7 +235,7 @@ let TestCombatData = {
       Last10DPS: "14552",
       Last30DPS: "24999",
       Last60DPS: "19507",
-      Job: "Mch",
+      Job: "Mnk",
       ParryPct: "0%",
       BlockPct: "0%",
       IncToHit: "72.73",
@@ -248,10 +248,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "0"
     },
-    "April O'Neil": {
+    "Feo Ul": {
       n: "\n",
       t: "\t",
-      name: "April O'Neil",
+      name: "Feo Ul",
       duration: "06:42",
       DURATION: "402",
       damage: "6959960",
@@ -336,10 +336,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "21277"
     },
-    "Praetor Fenix": {
+    "An Lad": {
       n: "\n",
       t: "\t",
-      name: "Praetor Fenix",
+      name: "An Lad",
       duration: "06:41",
       DURATION: "401",
       damage: "6142748",
@@ -424,10 +424,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "57117"
     },
-    "George Lass": {
+    "Tyr Beq": {
       n: "\n",
       t: "\t",
-      name: "George Lass",
+      name: "Tyr Beq",
       duration: "06:42",
       DURATION: "402",
       damage: "5352119",
@@ -493,7 +493,7 @@ let TestCombatData = {
       powerheal: "0",
       "powerheal-*": "0",
       kills: "0",
-      deaths: "1",
+      deaths: "0",
       threatstr: "+(0)0/-(0)0",
       threatdelta: "0",
       Last10DPS: "6008",
@@ -512,10 +512,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "0"
     },
-    "Christopher Nolan": {
+    "Uin Nee": {
       n: "\n",
       t: "\t",
-      name: "Christopher Nolan",
+      name: "Uin Nee",
       duration: "06:42",
       DURATION: "402",
       damage: "4190368",
@@ -600,10 +600,10 @@ let TestCombatData = {
       damageShield: "129999",
       absorbHeal: "0"
     },
-    "Ghost Crawler": {
+    "Jul Oul": {
       n: "\n",
       t: "\t",
-      name: "Ghost Crawler",
+      name: "Jul Oul",
       duration: "06:38",
       DURATION: "398",
       damage: "4038368",
@@ -688,10 +688,10 @@ let TestCombatData = {
       damageShield: "302976",
       absorbHeal: "0"
     },
-    "Terry Nazon": {
+    "Thon Sol": {
       n: "\n",
       t: "\t",
-      name: "Terry Nazon",
+      name: "Thon Sol",
       duration: "06:41",
       DURATION: "401",
       damage: "2980824",
@@ -757,7 +757,7 @@ let TestCombatData = {
       powerheal: "0",
       "powerheal-*": "0",
       kills: "0",
-      deaths: "1",
+      deaths: "0",
       threatstr: "+(0)0/-(0)0",
       threatdelta: "0",
       Last10DPS: "6401",
@@ -776,10 +776,10 @@ let TestCombatData = {
       damageShield: "266974",
       absorbHeal: "0"
     },
-    "Friedrich Nietzsche": {
+    "Sul Uin": {
       n: "\n",
       t: "\t",
-      name: "Friedrich Nietzsche",
+      name: "Sul Uin",
       duration: "06:42",
       DURATION: "402",
       damage: "2621846",
@@ -864,10 +864,10 @@ let TestCombatData = {
       damageShield: "1596897",
       absorbHeal: "0"
     },
-    "John Doe": {
+    "Naughty Pixie": {
       n: "\n",
       t: "\t",
-      name: "John Doe",
+      name: "Naughty Pixie",
       duration: "00:47",
       DURATION: "47",
       damage: "189424",
@@ -1040,10 +1040,10 @@ let TestCombatData = {
       damageShield: "0",
       absorbHeal: "0"
     },
-    "Selene (Friedrich Nietzsche)": {
+    "Selene (Sul Uin)": {
       n: "\n",
       t: "\t",
-      name: "Selene (Friedrich Nietzsche)",
+      name: "Selene (Sul Uin)",
       duration: "00:10",
       DURATION: "10",
       damage: "0",

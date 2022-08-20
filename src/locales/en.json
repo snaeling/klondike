@@ -75,6 +75,7 @@
     "percent-bar-color-tank": "Tank Bar Color",
     "percent-bar-color-heal": "Healer Bar Color",
     "percent-bar-color-dps": "DPS Bar Color",
+    "percent-bar-font-color": "Percent Bar Font Color",
     "secondary-stat": "Secondary Stat"
   }
 }

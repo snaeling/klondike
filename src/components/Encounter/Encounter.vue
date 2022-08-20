@@ -9,13 +9,13 @@
     </Combatant>
     <v-menu min-width="10em">
       <template v-slot:activator="{ on }">
-        <v-container fluid class="footer" v-on="on">
+        <v-footer fixed bottom class="footer" v-on="on" :style="footerStyle">
           <v-row>
             {{ duration }}
             <v-spacer />
             {{ dps }}
           </v-row>
-        </v-container>
+        </v-footer>
       </template>
       <v-list class="encounter-details-style" :style="encounterDetailsStyle">
         <v-list-item
@@ -57,6 +57,12 @@ export default {
     });
   },
   computed: {
+    footerStyle() {
+      return {
+        color: this.$store.state.settings.fontColor,
+        backgroundColor: this.$store.state.settings.backgroundColor,
+      }
+    },
     encounterDetailsItems() {
       return [
         {
@@ -114,6 +120,7 @@ export default {
   border-top: 0;
 }
 .footer {
+  @extend .default-border;
   @extend .no-spacing;
   padding: 0.2em 1.5em 0 0.1em;
 }

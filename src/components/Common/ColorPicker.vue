@@ -20,6 +20,18 @@
         />
       </v-col>
     </v-row>
+    <v-row class="row">
+      <v-col class="column">
+        <v-text-field
+          class="color-field ma-0 pa-0"
+          :style="colorPickerStyle"
+          v-model="color"
+          hide-details
+          dark
+        >
+        </v-text-field>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -41,7 +53,7 @@ export default {
   computed: {
     colorPickerStyle() {
       return {
-        color: this.$store.state.settings.fontColor,
+        color: "this.$store.state.settings.fontColor",
         backgroundColor: this.$store.state.settings._foregroundColor
       };
     }
@@ -61,6 +73,10 @@ export default {
 .color-picker {
   border: 0.1em solid;
   margin-bottom: 0.5em;
+}
+.color-field {
+  width: 160px;
+  font-size: 12px;
 }
 </style>
 <!--suppress CssUnusedSymbol, CssUnusedSymbol -->

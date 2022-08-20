@@ -15,13 +15,13 @@
               </v-flex>
               <v-flex class="info-container">
                 <v-layout column>
-                  <v-flex class="left-info" v-bind:class="{ blur: blurNames }">
+                  <v-flex class="left-info" :style="jobContainerTextStyle" v-bind:class="{ blur: blurNames }">
                     {{ combatant.name }}
                   </v-flex>
                 </v-layout>
               </v-flex>
               <v-flex class="info-container">
-                <v-layout column class="right-info">
+                <v-layout column class="right-info" :style="jobContainerTextStyle">
                   <v-flex>
                     {{ stats }}
                   </v-flex>
@@ -167,6 +167,11 @@ export default {
         display: this.$store.state.settings._jobIconDisplay
       };
     },
+    jobContainerTextStyle() {
+      return {
+        color: this.$store.state.settings.percentBarFontColor
+      }
+    },
     isPrimaryPlayer() {
       return (
         this.combatant.name === "YOU" ||
@@ -213,11 +218,13 @@ export default {
 }
 .left-info {
   @extend .label;
+  color:white
 }
 .right-info {
   @extend .label;
   margin: 0 1.4em 0 0;
   text-align: right;
+  color:white
 }
 .job-container {
   display: flex;
