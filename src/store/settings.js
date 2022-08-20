@@ -40,8 +40,8 @@ function initialState() {
   let state = {
     collapsed: false,
     backgroundColor: "#1e1e1e",
-    fontColor: "#ebffff",
-    opacity: 85,
+    fontColor: "#595F5F",
+    opacity: 90,
     nameStyleId: 0,
     styleLimitBreak: false,
     blurNames: false,
@@ -64,12 +64,13 @@ function initialState() {
     latestSplashSeen: 0,
     showGithub: true,
     primaryPlayer: String.empty,
-    percentBarYou: false,
-    percentBarColorYou: "#42126c",
-    percentBarRole: true,
+    percentBarYou: true,
+    percentBarColorYou: "#000000",
+    percentBarRole: false,
     percentBarColorTank: "#2d3a80",
     percentBarColorHeal: "#346624",
     percentBarColorDps: "#732828",
+    percentBarFontColor: "#D1D1D1",
     secondaryStat: 0
   };
   calcDerivedProps(state);
@@ -130,8 +131,8 @@ function calcCollapsed(state) {
 
 function updateDefaultPercentBarColor(state) {
   if (state.percentBarRole) {
-    state.percentBarColor = "#484C4E";
+    state.percentBarColor = "#DD9326";
   } else {
-    state.percentBarColor = "#12676c";
+    state.percentBarColor = "#DD9326";
   }
 }
