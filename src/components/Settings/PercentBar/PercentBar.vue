@@ -6,6 +6,11 @@
       v-bind:initialCheckboxValue="settings.percentBar"
       @change="settings.percentBar = $event"
     />
+    <Checkbox
+      label="settings.verbose"
+      v-bind:initialCheckboxValue="settings.verbose"
+      @change="settings.verbose = $event"
+    />
     <Select
       label="settings.percent-bar-mode"
       v-bind:current-item-id="settings.percentBarMode"
@@ -16,6 +21,11 @@
       label="settings.percent-bar-color"
       v-bind:initial-color="settings.percentBarColor"
       @change="settings.percentBarColor = $event"
+    />
+    <ColorPicker
+      label="settings.percent-bar-font-color"
+      v-bind:initial-color="settings.percentBarFontColor"
+      @change="settings.percentBarFontColor = $event"
     />
     <SettingButtons @reset="reset" @update="update" />
   </v-content>
@@ -35,7 +45,9 @@ export default {
       settings: {
         percentBar: this.$store.state.settings.percentBar,
         percentBarMode: this.$store.state.settings.percentBarMode,
-        percentBarColor: this.$store.state.settings.percentBarColor
+        percentBarColor: this.$store.state.settings.percentBarColor,
+        verbose: this.$store.state.settings.verbose,
+        percentBarFontColor: this.$store.state.settings.percentBarFontColor
       },
       validValues: {
         percentBarModes: this.$store.state.validValues.percentBarModes

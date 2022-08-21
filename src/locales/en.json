@@ -76,6 +76,7 @@
     "percent-bar-color-heal": "Healer Bar Color",
     "percent-bar-color-dps": "DPS Bar Color",
     "percent-bar-font-color": "Percent Bar Font Color",
-    "secondary-stat": "Secondary Stat"
+    "secondary-stat": "Secondary Stat",
+    "verbose": "Verbose (CH|DH|CDH|MH)"
   }
 }

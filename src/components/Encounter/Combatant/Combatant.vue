@@ -15,16 +15,37 @@
               </v-flex>
               <v-flex class="info-container">
                 <v-layout column>
-                  <v-flex class="left-info" :style="jobContainerTextStyle" v-bind:class="{ blur: blurNames }">
+                  <v-flex
+                    class="left-info"
+                    :style="jobContainerTextStyle"
+                    v-bind:class="{ blur: blurNames }"
+                  >
                     {{ combatant.name }}
                   </v-flex>
                 </v-layout>
               </v-flex>
               <v-flex class="info-container">
-                <v-layout column class="right-info" :style="jobContainerTextStyle">
+                <v-layout row class="right-info" :style="jobContainerTextStyle">
                   <v-flex>
                     {{ stats }}
                   </v-flex>
+                  <span v-if="verbose" style="margin:0 0 0 .5em;color: grey;">
+                    <span class="verbose-component">{{
+                      combatantDetailsItems[2].value
+                    }}</span>
+                    |
+                    <span class="verbose-component">{{
+                      combatantDetailsItems[3].value
+                    }}</span>
+                    |
+                    <span class="verbose-component">{{
+                      combatantDetailsItems[4].value
+                    }}</span>
+                    |
+                    <span class="verbose-component">{{
+                      combatantDetailsItems[8].value
+                    }}</span>
+                  </span>
                 </v-layout>
               </v-flex>
             </v-layout>
@@ -62,6 +83,11 @@ import { DPS, HEALER, TANK } from "@/constants/Roles";
 import store from "../../../store";
 
 export default {
+  data() {
+    return {
+      verbose: this.$store.state.settings.verbose
+    };
+  },
   name: "Combatant",
   props: ["combatant"],
   computed: {
@@ -170,7 +196,7 @@ export default {
     jobContainerTextStyle() {
       return {
         color: this.$store.state.settings.percentBarFontColor
-      }
+      };
     },
     isPrimaryPlayer() {
       return (
@@ -218,13 +244,13 @@ export default {
 }
 .left-info {
   @extend .label;
-  color:white
+  color: white;
 }
 .right-info {
   @extend .label;
   margin: 0 1.4em 0 0;
   text-align: right;
-  color:white
+  color: white;
 }
 .job-container {
   display: flex;
@@ -257,5 +283,10 @@ export default {
 }
 .v-list-item:first-child {
   font-weight: bold;
+}
+.verbose-component {
+  width: 2.25em;
+  display: inline-block;
+  text-align: center;
 }
 </style>

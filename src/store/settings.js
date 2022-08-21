@@ -71,7 +71,8 @@ function initialState() {
     percentBarColorHeal: "#346624",
     percentBarColorDps: "#732828",
     percentBarFontColor: "#D1D1D1",
-    secondaryStat: 0
+    secondaryStat: 0,
+    verbose: true
   };
   calcDerivedProps(state);
   updateDefaultPercentBarColor(state);

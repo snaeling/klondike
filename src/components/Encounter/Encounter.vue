@@ -9,6 +9,7 @@
     </Combatant>
     <v-menu min-width="10em">
       <template v-slot:activator="{ on }">
+        <v-container fluid style="height:5em" v-on="on"> </v-container>
         <v-footer fixed bottom class="footer" v-on="on" :style="footerStyle">
           <v-row>
             {{ duration }}
@@ -60,8 +61,8 @@ export default {
     footerStyle() {
       return {
         color: this.$store.state.settings.fontColor,
-        backgroundColor: this.$store.state.settings.backgroundColor,
-      }
+        backgroundColor: this.$store.state.settings.backgroundColor
+      };
     },
     encounterDetailsItems() {
       return [

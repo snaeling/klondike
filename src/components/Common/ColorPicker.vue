@@ -53,7 +53,7 @@ export default {
   computed: {
     colorPickerStyle() {
       return {
-        color: "this.$store.state.settings.fontColor",
+        color: this.$store.state.settings.fontColor,
         backgroundColor: this.$store.state.settings._foregroundColor
       };
     }
